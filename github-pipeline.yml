@@ -1,9 +1,19 @@
 ---
 resources:
-- name: springboot-app
-  type: git
-  source:
-    uri: https://github.com/rishipathak/spring-boot-maven-example-helloworld.git
-    branch: master
-    username: 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
-    password: x-oauth-basic
+  - name: springboot-app
+    type: git
+    source:
+      uri: https://github.com/rishipathak/spring-boot-maven-example-helloworld.git
+      branch: master
+      username: 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
+      password: x-oauth-basic
+
+jobs:
+  - name: build
+    serial: true
+    plan:
+      - get:  springboot-app
+        trigger: true
+      - task: mvn-build
+        privileged: true
+        file: springboot-app/build.yml

@@ -3,5 +3,5 @@ echo "starting maven build"
 echo $(pwd)
 echo $(ls)
 
- cd $(pwd)/springboot-app/spring-boot-maven-example-helloworld
+ cd springboot-app
 mvn clean install

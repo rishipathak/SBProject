@@ -5,5 +5,5 @@ resources:
   source:
     uri: https://github.com/rishipathak/spring-boot-maven-example-helloworld.git
     branch: master
-    username: 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
+    username: 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
     password: x-oauth-basic

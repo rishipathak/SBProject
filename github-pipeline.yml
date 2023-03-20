@@ -1,0 +1,9 @@
+---
+resources:
+- name: springboot-app
+  type: git
+  source:
+    uri: https://github.com/rishipathak/spring-boot-maven-example-helloworld.git
+    branch: master
+    username: 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
+    password: x-oauth-basic
